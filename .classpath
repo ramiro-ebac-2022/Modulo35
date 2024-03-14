@@ -8,9 +8,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/postgresql-42.6.0.jar"/>
-	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/javax.persistence.jar"/>
-	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/hibernate-jpa-2.1-api-1.0.2.Final.jar"/>
 	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/hibernate-release-5.6.2.Final/lib/required/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/hibernate-release-5.6.2.Final/lib/required/byte-buddy-1.11.20.jar"/>
 	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/hibernate-release-5.6.2.Final/lib/required/classmate-1.5.1.jar"/>
@@ -27,5 +24,9 @@
 	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/hibernate-release-5.6.2.Final/lib/required/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
 	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/hibernate-release-5.6.2.Final/lib/required/stax-ex-1.8.jar"/>
 	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/hibernate-release-5.6.2.Final/lib/required/txw2-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/postgresql-42.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/javaee-api-8.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/D/1 Ramiro/8 Estudo/Ebac/Especialista Back-End Java/0 Ferramentas/javax.mail-1.6.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

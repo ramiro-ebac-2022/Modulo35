@@ -15,6 +15,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ForeignKey;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
@@ -54,7 +55,7 @@ public class VendaJpa implements Persistente {
 	
 	@ManyToOne
 	@JoinColumn(name = "id_cliente_fk", 
-		//foreignKey = @ForeignKey(name = "fk_venda_cliente"), //ToDo : erro nesta linha ??
+		foreignKey = @ForeignKey(name = "fk_venda_cliente"), 
 		referencedColumnName = "id", nullable = false
 	)
 	private ClienteJpa cliente;

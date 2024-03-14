@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-//import javax.persistence.ForeignKey;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -39,7 +39,7 @@ public class ProdutoQuantidadeJpa {
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "id_venda_fk", 
-				//foreignKey = @ForeignKey(name = "fk_prod_qtd_venda"),  //ToDo : está com erro !!
+				foreignKey = @ForeignKey(name = "fk_prod_qtd_venda"),  
 				referencedColumnName = "id", nullable = false
 	)
 	
