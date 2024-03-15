@@ -1,6 +1,3 @@
-/**
- * 
- */
 package br.com.zavala.dao;
 
 import java.sql.Connection;
@@ -267,7 +264,7 @@ public class VendaDAO extends GenericDAO<Venda, String> implements IVendaDAO {
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO TB_PRODUTO_QUANTIDADE ");
 		sb.append("(ID, ID_PRODUTO_FK, ID_VENDA_FK, QUANTIDADE, VALOR_TOTAL)");
-		sb.append("VALUES (nextval('sq_produto_quantidade'),?,?,?,?)");
+	    sb.append("VALUES (nextval('sq_produto_quantidade'),?,?,?,?)"); //??? Ramiro : não está atribuindo valor ao ID da venda
 		return sb.toString();
 	}
 	
