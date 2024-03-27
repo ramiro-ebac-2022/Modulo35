@@ -174,7 +174,8 @@ public class VendaDAO extends GenericDAO<Venda, String> implements IVendaDAO {
 		    sbProd.append("SELECT PQ.ID, PQ.QUANTIDADE, PQ.VALOR_TOTAL, ");
 		    sbProd.append("P.ID AS ID_PRODUTO, P.CODIGO, P.NOME, P.DESCRICAO, P.VALOR ");
 		    sbProd.append("FROM TB_PRODUTO_QUANTIDADE PQ ");
-		    sbProd.append("INNER JOIN TB_PRODUTO P ON P.ID = PQ.ID_PRODUTO_FK ");
+		  //sbProd.append("INNER JOIN TB_PRODUTO P ON P.ID = PQ.ID_PRODUTO_FK "); //ajuste Ramiro: Trocar
+		    sbProd.append("INNER JOIN TB_PRODUTO P ON P.ID = PQ.PRODUTO_ID ");    //"ID_PRODUTO_FK" por "PRODUTO_ID"
 		    sbProd.append("WHERE PQ.ID_VENDA_FK = ?");
 		    stmProd = connection.prepareStatement(sbProd.toString());
 		    stmProd.setLong(1, venda.getId());
@@ -263,8 +264,9 @@ public class VendaDAO extends GenericDAO<Venda, String> implements IVendaDAO {
 	private String getQueryInsercaoProdQuant() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO TB_PRODUTO_QUANTIDADE ");
-		sb.append("(ID, ID_PRODUTO_FK, ID_VENDA_FK, QUANTIDADE, VALOR_TOTAL)");
-	    sb.append("VALUES (nextval('sq_produto_quantidade'),?,?,?,?)"); //??? Ramiro : não está atribuindo valor ao ID da venda
+	  //sb.append("(ID, ID_PRODUTO_FK, ID_VENDA_FK, QUANTIDADE, VALOR_TOTAL)"); //ajuste Ramiro : trocar
+		sb.append("(ID, PRODUTO_ID, ID_VENDA_FK, QUANTIDADE, VALOR_TOTAL)");    //"ID_PRODUTO_FK" por "PRODUTO_ID"
+	    sb.append("VALUES (nextval('sq_produto_quantidade'),?,?,?,?)"); 
 		return sb.toString();
 	}
 	
